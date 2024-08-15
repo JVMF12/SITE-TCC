@@ -28,6 +28,12 @@ export default {
       },
       margin: {
         custom: '45rem',
+        bottom: '2rem',
+        top: '3rem',
+        inline: '1.5rem',
+        box: '1.75rem',
+      },
+      padding: {
         bottom: '.8rem',
         top: '.8rem',
         inline: '1rem',

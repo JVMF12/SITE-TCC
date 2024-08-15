@@ -64,7 +64,7 @@ function Materiais() {
           <h2 className='text-titulo font-semibold pt-top text-xl md:text-center'>Workplate</h2>
           <img src={workplate} alt="imagem de uma workplate" className='my-inline '/>
         </div>
-        <div className='bg-bCaixa rounded-b-[.92rem] flex flex-col items-center md:rounded-r-[.92rem] md:rounded-l-none md:flex md:flex-col md:justify-center md:max-w-[32.5rem] md:py-desk md:px-desk'>
+        <div className='bg-bgCaixa rounded-b-[.92rem] flex flex-col items-center md:rounded-r-[.92rem] md:rounded-l-none md:flex md:flex-col md:justify-center md:max-w-[32.5rem] md:py-desk md:px-desk'>
           <p className='mb-bottom flex text-justify pt-top p-inline'>A WorkPlate 400 é uma base de trabalho para montar sua placa Arduino junto a uma protoboard de 400 furos, criando assim um ambiente ideal para o desenvolvimento de projetos de uma forma prática e dinâmica.</p>
           <p className='pb-top'>Preço: R$ 14,90</p>
         </div>
