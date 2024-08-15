@@ -9,7 +9,7 @@ export default function Sobre() {
         <h1 className='uppercase text-center mt-4 pb-6 font-bold text-xl md:text-3xl text-botaoSelecionado '>Sobre nós</h1>
         <div className='flex flex-col items-center justify-center md:flex-row md:gap-16'>
           <section>
-            <div className='w-80 md:w-96 p-8 h-auto  flex flex-col justify-normal items-center bg-fundoHeader left-10 rounded-[8px] mt-10 '>
+            <div className='w-80 md:w-96 p-8 h-auto  flex flex-col justify-normal items-center bg-fundoHeader left-10 rounded-[8px] mt-10 text-white'>
               <img className=' w-48 h-48 ' src="/pedroca.svg" alt="" />
               <p className='font-bold text-2xl pt-6 font-sans'>Pedro H. Gomes</p>
               <p className='text-xl'><span className='font-bold'>Idade:</span>17 anos</p>
@@ -20,7 +20,7 @@ export default function Sobre() {
           </section>
 
           <section className='py-20'>
-            <div className='w-80 md:w-96 p-8 h-auto  flex flex-col justify-normal items-center bg-fundoHeader left-10 rounded-[8px] mt-10'>
+            <div className='w-80 md:w-96 p-8 h-auto  flex flex-col justify-normal items-center bg-fundoHeader left-10 rounded-[8px] mt-10 text-white'>
               <img className=' w-48 h-48 ' src="/julia.svg" alt="" />
               <p className='font-bold text-2xl pt-6 font-sans'>Julia Schiavi</p>
               <p className='text-xl'><span className='font-bold'>Idade:</span>18 anos</p>
@@ -31,7 +31,7 @@ export default function Sobre() {
           </section>
 
           <section>
-            <div className='w-80 md:w-96 p-8 h-auto  flex flex-col justify-normal items-center bg-fundoHeader left-10 rounded-[8px] mt-10'>
+            <div className='w-80 md:w-96 p-8 h-auto  flex flex-col justify-normal items-center bg-fundoHeader left-10 rounded-[8px] mt-10 text-white'>
               <img className=' w-48 h-48 ' src="/joao.svg" alt="" />
               <p className='font-bold text-2xl pt-6 font-sans'>João Victor Martins</p>
               <p className='text-xl'><span className='font-bold'>Idade:</span>17 anos</p>

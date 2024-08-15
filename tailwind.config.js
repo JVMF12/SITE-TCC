@@ -7,17 +7,18 @@ export default {
   theme: {
     extend: {
       colors: {
-        botaoSelecionado: '#216487',
+        botaoSelecionado: '#FCAD00',
         naoSelecionado: '#FFF',
-        fundoHeader: '#87BFDD',
+        fundoHeader: '#2E5339',
         fundoSite: '#EDEEEF',
-        bgCaixa: '#87BFDD',
+        bgCaixa: '#2E5339',
         text: '#3f4249',
-        titulo: '#216487',
+        titulo: '#FCAD00',
       },
       fontFamily: {
         cormorant: ['Cormorant Garamond', 'serif'],
-        openSans: ['Open Sans', 'sans-serif']
+        openSans: ['Open Sans', 'sans-serif'],
+        anton: ['Anton', 'sans-serif']
       },
       letterSpacing: {
          ultraWidest: '0.25em',
