@@ -6,9 +6,9 @@ export default function HeaderHome() {
   return (
     <header className='w-full bg-fundoHeader px-4 py-2 flex items-center justify-between overflow-x-auto'>
 
-        <button className='flex-shrink-0'>
-           <img src={Logo} alt="" className='w-12 h-8 md:w-20 md:h-12 mr-3 md:mr-auto'/>
-        </button>
+        <Link to='/' className='flex-shrink-0'>
+           <img src={Logo} alt="Logo da NutriScale" className='w-12 h-8 md:w-20 md:h-12 mr-3 md:mr-auto'/>
+        </Link>
 
         <nav className='flex-grow hidden md:inline'>
             <ul className='flex md:justify-end space-x-4 md:space-x-6 text-xs md:text-base uppercase text-naoSelecionado font-bold'>
@@ -16,10 +16,10 @@ export default function HeaderHome() {
                     <Link to="/">Home</Link>
                 </li>
                 <li className= 'whitespace-nowrap'>
-                    <a href="">Como Usar</a>
+                    <Link to="/comousar">Como Usar</Link>
                 </li>
                 <li>
-                    <a href="">Materiais</a>
+                    <Link to="/materiais">Materiais</Link>
                 </li>
                 <li className=''>
                     <Link to="/referencias">Referências</Link>
@@ -43,13 +43,13 @@ export default function HeaderHome() {
                     <div className='w-6 h-1 -rotate-45 absolute bg-white'></div>
                 </button>
                 <li className='flex justify-center w-full text-botaoSelecionado'>
-                    <a href="">Home</a>
+                    <Link to="/">Home</Link>
                 </li>
                 <li className= 'whitespace-nowrap'>
-                    <a href="">Como Usar</a>
+                    <Link to="/comousar">Como Usar</Link>
                 </li>
                 <li>
-                    <a href="">Materiais</a>
+                    <Link to="/materiais">Materiais</Link>
                 </li>
                 <li className=''>
                     <Link to="/referencias">Referências</Link>

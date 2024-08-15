@@ -11,6 +11,9 @@ export default {
         naoSelecionado: '#FFF',
         fundoHeader: '#87BFDD',
         fundoSite: '#EDEEEF',
+        bgCaixa: '#87BFDD',
+        text: '#3f4249',
+        titulo: '#216487',
       },
       fontFamily: {
         cormorant: ['Cormorant Garamond', 'serif'],
@@ -21,10 +24,19 @@ export default {
       },
       borderRadius: {
         custom: '2.188rem',
+        customPedro: '1.188rem'
       },
       margin: {
         custom: '45rem',
+        bottom: '.8rem',
+        top: '.8rem',
+        inline: '1rem',
+        desk: '1.5rem',
       },
+      custom: {
+        with: '50rem',
+        max: '50rem',
+      }
     },
   },
   plugins: [],

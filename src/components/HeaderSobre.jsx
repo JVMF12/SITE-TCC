@@ -6,9 +6,9 @@ export default function HeaderSobre() {
   return (
     <header className='w-full bg-fundoHeader px-4 py-2 flex items-center justify-between overflow-x-auto'>
 
-        <button className='flex-shrink-0'>
-           <img src={Logo} alt="" className='w-12 h-8 md:w-20 md:h-12 mr-3 md:mr-auto'/>
-        </button>
+        <Link to='/' className='flex-shrink-0'>
+           <img src={Logo} alt="Logo da NutriScale" className='w-12 h-8 md:w-20 md:h-12 mr-3 md:mr-auto'/>
+        </Link>
 
         <nav className='flex-grow hidden md:inline'>
             <ul className='flex md:justify-end space-x-4 md:space-x-6 text-xs md:text-base uppercase text-naoSelecionado font-bold'>
@@ -16,16 +16,16 @@ export default function HeaderSobre() {
                     <Link to="/">Home</Link>
                 </li>
                 <li className= 'whitespace-nowrap'>
-                    <a href="">Como Usar</a>
+                    <Link to="/comousar">Como Usar</Link>
                 </li>
                 <li>
-                    <a href="">Materiais</a>
+                    <Link to="/materiais">Materiais</Link>
                 </li>
                 <li className=''>
                     <Link to="/referencias">Referências</Link>
                 </li>
                 <li className='whitespace-nowrap text-botaoSelecionado underline decoration-botaoSelecionado decoration-2'>
-                    <a href="">Sobre nós</a>
+                    <Link to="/sobre">Sobre nós</Link>
                 </li>
             </ul>
         </nav>
@@ -46,16 +46,16 @@ export default function HeaderSobre() {
                     <Link to="/">Home</Link>
                 </li>
                 <li className= 'whitespace-nowrap'>
-                    <a href="">Como Usar</a>
+                    <Link to="/comousar">Como Usar</Link>
                 </li>
                 <li>
-                    <a href="">Materiais</a>
+                    <Link to="/materiais">Materiais</Link>
                 </li>
                 <li className=''>
                     <Link to="/referencias">Referências</Link>
                 </li>
                 <li className='whitespace-nowrap text-botaoSelecionado'>
-                    <a href="">Sobre nós</a>
+                    <Link to="/sobre">Sobre nós</Link>
                 </li>
             </ul>
         </button>
