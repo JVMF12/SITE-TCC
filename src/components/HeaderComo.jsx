@@ -55,7 +55,7 @@ export default function HeaderComo() {
                     <Link to="/referencias">Referências</Link>
                 </li>
                 <li className='whitespace-nowrap'>
-                    <Link to="sobre">Sobre nós</Link>
+                    <Link to="/sobre">Sobre nós</Link>
                 </li>
             </ul>
         </button>
