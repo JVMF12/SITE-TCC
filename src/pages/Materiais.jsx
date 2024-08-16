@@ -14,7 +14,7 @@ function Materiais() {
       <main className='bg-fundoSite font-openSans font-normal text-sm text-text md:flex md:flex-col md:items-center'>
       
       <h1 className=' text-titulo font-bold text-center pt-[2rem] text-3xl'>Materiais</h1>
-      <section className='border-solid border-bgCaixa border-[0.225rem]  mx-box mb-bottom mt-top rounded-custom md:flex md:w-[50rem] sm:max-w-[47rem]'>
+      <section className='border-solid border-bgCaixa border-[0.225rem]  mx-box mb-bottom mt-top rounded-customPedro md:flex md:w-[50rem] sm:max-w-[47rem]'>
         <div className='flex flex-col items-center md:justify-center md:px-inline md:w-[15rem]'>
           <h2 className='text-titulo font-semibold pt-top text-xl'>Arduino</h2>
           <img src={arduino} alt="imagem de uma peça arduino" className='my-inline  md:h-[7rem] md:w-[10rem]'/>
@@ -26,7 +26,7 @@ function Materiais() {
         
       </section>
 
-      <section className='border-solid border-bgCaixa border-[0.225rem] mx-box mb-bottom mt-top rounded-custom md:flex md:w-[50rem] sm:max-w-[47rem]'>
+      <section className='border-solid border-bgCaixa border-[0.225rem] mx-box mb-bottom mt-top rounded-customPedro md:flex md:w-[50rem] sm:max-w-[47rem]'>
         <div className='flex flex-col items-center md:justify-center md:px-inline md:w-[15rem]'>
           <h2 className='text-titulo font-semibold pt-top text-xl md:text-center'>Célula de carga</h2>
           <img src={clcarga} alt="imagem de uma célula de carga" className='my-inline '/>
@@ -38,7 +38,7 @@ function Materiais() {
         </div>
       </section>
 
-      <section className='border-solid border-bgCaixa border-[0.225rem] mx-box mb-bottom mt-top rounded-custom md:flex md:w-[50rem] sm:max-w-[47rem]'>
+      <section className='border-solid border-bgCaixa border-[0.225rem] mx-box mb-bottom mt-top rounded-customPedro md:flex md:w-[50rem] sm:max-w-[47rem]'>
         <div className='flex flex-col items-center md:justify-center md:px-inline md:w-[15rem]'>
           <h2 className='text-titulo font-semibold pt-top text-xl md:text-center'>Módulo HX711</h2>
           <img src={modulo} alt="imagem de um módulo hx711" className='my-inline '/>
@@ -49,7 +49,7 @@ function Materiais() {
         </div>
       </section>
 
-      <section className='border-solid border-bgCaixa border-[0.225rem] mx-box mb-bottom mt-top rounded-custom md:flex md:w-[50rem] sm:max-w-[47rem]'>
+      <section className='border-solid border-bgCaixa border-[0.225rem] mx-box mb-bottom mt-top rounded-customPedro md:flex md:w-[50rem] sm:max-w-[47rem]'>
         <div className='flex flex-col items-center md:justify-center md:px-inline md:w-[15rem]'>
           <h2 className='text-titulo font-semibold pt-top text-xl md:text-center'>Protoboard</h2>
           <img src={protoboard} alt="imagem de uma protoboard" className='my-inline '/>
@@ -60,7 +60,7 @@ function Materiais() {
         </div>
       </section>
 
-      <section className='border-solid border-bgCaixa border-[0.225rem] mx-box mb-bottom mt-top rounded-custom md:flex md:w-[50rem] sm:max-w-[47rem]'>
+      <section className='border-solid border-bgCaixa border-[0.225rem] mx-box mb-bottom mt-top rounded-customPedro md:flex md:w-[50rem] sm:max-w-[47rem]'>
         <div className='flex flex-col items-center md:justify-center md:px-inline md:w-[15rem]'>
           <h2 className='text-titulo font-semibold pt-top text-xl md:text-center'>Workplate</h2>
           <img src={workplate} alt="imagem de uma workplate" className='my-inline '/>
@@ -71,7 +71,7 @@ function Materiais() {
         </div>
       </section>
 
-      <section className='border-solid border-bgCaixa border-[0.225rem] mx-box mt-top rounded-custom md:flex md:w-[50rem] sm:max-w-[47rem] md:mb-bottom'>
+      <section className='border-solid border-bgCaixa border-[0.225rem] mx-box mt-top rounded-customPedro md:flex md:w-[50rem] sm:max-w-[47rem] md:mb-bottom'>
         <div className='flex flex-col items-center md:justify-center md:px-inline md:w-[15rem]'>
           <h2 className='text-titulo font-semibold pt-top text-xl md:text-center'>Display LCD</h2>
           <img src={lcd} alt="imagem de um display lcd" className='my-inline '/>
