@@ -3,11 +3,15 @@ import Logo from '/LOGO.svg'
 import { Link } from 'react-router-dom'
 
 export default function HeaderHome() {
+    const [aberto, setAberto] = useState(false)
+    const handleAberto = () => {
+        setAberto((prev) => !prev)
+    }
   return (
     <header className='w-full bg-fundoHeader px-4 py-2 flex items-center justify-between overflow-x-auto'>
 
         <Link to='/' className='flex-shrink-0'>
-           <img src={Logo} alt="Logo da NutriScale" className='w-12 h-8 md:w-20 md:h-16 mr-3 md:mr-auto'/>
+           <img src={Logo} alt="Logo da NutriScale" className='w-20 h-12 md:w-20 md:h-12 mr-3 md:mr-auto'/>
         </Link>
 
         <nav className='flex-grow hidden md:inline'>
@@ -31,34 +35,38 @@ export default function HeaderHome() {
         </nav>
 
         {/*Menu Hamburgui kkkkkacabapeloamor*/}
-        <button className='space-y-1 group md:hidden'>
+        <button onClick={handleAberto} className='space-y-1 group md:hidden'>
             <div className='w-6 h-1 bg-white'></div>
             <div className='w-6 h-1 bg-white'></div>
             <div className='w-6 h-1 bg-white'></div>
-
-            {/* menu */}
-            <ul className='bg-fundoHeader w-screen pb-10 absolute -top-full group-focus:top-0 right-0 duration-150 flex flex-col space-y-3 justify-end text-naoSelecionado'>
-                <button className='px-10 py-8 relative ml-auto'>
-                    <div className='w-6 h-1 rotate-45 absolute bg-white'></div>
-                    <div className='w-6 h-1 -rotate-45 absolute bg-white'></div>
-                </button>
-                <li className='flex justify-center w-full text-botaoSelecionado'>
-                    <Link to="/">Home</Link>
-                </li>
-                <li className= 'whitespace-nowrap'>
-                    <Link to="/comousar">Como Usar</Link>
-                </li>
-                <li>
-                    <Link to="/materiais">Materiais</Link>
-                </li>
-                <li className=''>
-                    <Link to="/referencias">Referências</Link>
-                </li>
-                <li className='whitespace-nowrap'>
-                    <Link to="/sobre">Sobre nós</Link>
-                </li>
-            </ul>
         </button>
+
+        {aberto ? (
+            <ul className='bg-fundoHeader w-screen pb-10 absolute top-0 right-0 duration-150 flex flex-col space-y-3 justify-end text-naoSelecionado'>
+            <Link to='/' className='flex-shrink-0'>
+                <img src={Logo} alt="Logo da NutriScale" className='w-22 h-[3.5rem] pt-2 ml-[1.65rem] md:w-20 md:h-12 mr-3 md:mr-auto'/>
+            </Link>
+            <button onClick={handleAberto} className='px-10 relative -top-9 ml-auto'>
+                <div className='w-6 h-1 rotate-45 absolute bg-white'></div>
+                <div className='w-6 h-1 -rotate-45 absolute bg-white'></div>
+            </button>
+            <li className='flex justify-center w-full text-botaoSelecionado'>
+                <Link to="/">Home</Link>
+            </li>
+            <li className= 'whitespace-nowrap flex justify-center'>
+                <Link to="/comousar">Como Usar</Link>
+            </li>
+            <li className='flex justify-center'>
+                <Link to="/materiais">Materiais</Link>
+            </li>
+            <li className='flex justify-center'>
+                <Link to="/referencias">Referências</Link>
+            </li>
+            <li className='whitespace-nowrap flex justify-center'>
+                <Link to="/sobre">Sobre nós</Link>
+            </li>
+        </ul>
+        ) : null}
         
     </header>
   )
