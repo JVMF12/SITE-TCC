@@ -10,7 +10,7 @@ export default function Sobre() {
         <div className='flex flex-col items-center justify-center md:flex-row md:gap-4 lg:gap-14'>
           
           <section className='w-full max-w-full md:w-auto'>
-            <div className='w-80 md:w-75 lg:w-96 p-8 h-auto flex flex-col justify-normal items-center bg-fundoHeader rounded-[8px] mt-10 text-white'>
+            <div className='w-80 md:w-75 lg:w-96 p-8 h-auto flex flex-col justify-center items-center bg-fundoHeader rounded-[8px] mt-10 text-white'>
               <img className='w-48 h-48' src="/pedroca.svg" alt="Pedro H. Gomes" />
               <p className='font-bold text-2xl pt-6 font-sans'>Pedro H. Gomes</p>
               <p className='text-xl'><span className='font-bold'>Idade:</span> 17 anos</p>

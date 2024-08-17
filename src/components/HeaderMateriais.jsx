@@ -11,18 +11,18 @@ export default function HeaderHome() {
     <header className='w-full bg-fundoHeader px-4 py-2 flex items-center justify-between overflow-x-auto'>
 
         <Link to='/' className='flex-shrink-0'>
-           <img src={Logo} alt="Logo da NutriScale" className='w-20 h-12 md:w-20 md:h-12 mr-3 md:mr-auto'/>
+           <img src={Logo} alt="Logo da NutriScale" className='w-20 h-12 md:w-30 md:h-16 mr-3 md:mr-auto'/>
         </Link>
 
         <nav className='flex-grow hidden md:inline'>
             <ul className='flex md:justify-end space-x-4 md:space-x-6 text-xs md:text-base uppercase text-naoSelecionado font-bold'>
-                <li className='flex text-botaoSelecionado underline decoration-botaoSelecionado decoration-2'>
+                <li className='flex '>
                     <Link to="/">Home</Link>
                 </li>
                 <li className= 'whitespace-nowrap'>
                     <Link to="/comousar">Como Usar</Link>
                 </li>
-                <li>
+                <li className='text-botaoSelecionado underline decoration-botaoSelecionado decoration-2'>
                     <Link to="/materiais">Materiais</Link>
                 </li>
                 <li className=''>

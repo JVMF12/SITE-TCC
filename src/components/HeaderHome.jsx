@@ -11,7 +11,7 @@ export default function HeaderHome() {
     <header className='w-full bg-fundoHeader px-4 py-2 flex items-center justify-between overflow-x-auto'>
 
         <Link to='/' className='flex-shrink-0'>
-           <img src={Logo} alt="Logo da NutriScale" className='w-20 h-12 md:w-20 md:h-12 mr-3 md:mr-auto'/>
+           <img src={Logo} alt="Logo da NutriScale" className='w-20 h-12 md:w-30 md:h-16 mr-3 md:mr-auto'/>
         </Link>
 
         <nav className='flex-grow hidden md:inline'>
