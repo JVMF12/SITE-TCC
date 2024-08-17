@@ -20,34 +20,34 @@ export default function Home() {
 
         <section className='flex flex-col items-center justify-center'>
             <h2 className='uppercase text-center mt-4 mb-7 font-bold text-xl md:text-3xl text-botaoSelecionado'>
-                Porquê nos escolher?
+                Qual nosso objetivo?
             </h2>
 
             <div className='flex flex-col md:flex-row p-3 md:gap-10 w-80 md:max-w-4xl md:w-[800px]  mb-10 ml-4 md:ml-2 text-white'>
                 <div className='mb-10 md:flex-1 md:h-[225px] border border-fundoHeader bg-fundoHeader rounded-custom p-5 md:flex md:items-center md:justify-center'>
                     <p className='text-xs md:text-base text-justify md:text-left'>
-                        Descubra uma nova maneira de monitorar sua saúde com essa balança inteligente conectada ao aplicativo exclusivo, oferecendo análises precisas e insights personalizados em tempo real.
+                    O objetivo da NutriScale é auxiliar todas as pessoas na sua jornada rumo à alimentação saudável e balanceada, pois acreditamos que uma boa dieta é a chave para uma qualidade de vida melhor para todos.
                     </p>
                 </div>
 
                 <div className='md:flex-1 md:h-[225px] border border-fundoHeader bg-fundoHeader rounded-custom p-5 md:flex md:items-center md:justify-center'>
                     <p className='text-xs md:text-base text-justify md:text-left'>
-                        Seja para controlar calorias, analisar nutrientes ou simplesmente manter o equilíbrio, essa ferramenta é a melhor aliada para seu bem-estar diário.
+                    Nós iremos te ajudar a manter o controle da sua alimentação e também a variá-la, de acordo com as necessidades da dieta que você estiver seguindo.
                     </p>
                 </div>
             </div>
         </section>
 
         <section className='flex flex-col items-center justify-center'>
-            <h2 className='uppercase text-center mt-4 mb-7 font-bold text-xl md:text-3xl text-botaoSelecionado'>Qual nosso objetivo?</h2>
+            <h2 className='uppercase text-center mt-4 mb-7 font-bold text-xl md:text-3xl text-botaoSelecionado'>Porquê nos escolher?</h2>
 
             <div  className='flex flex-col md:flex-row p-3 md:gap-10 w-80 md:max-w-4xl md:w-[800px]  mb-10 ml-4 md:ml-2 text-white'>
                 <div className='mb-10 md:flex-1 md:h-[225px] border border-fundoHeader bg-fundoHeader rounded-custom md:flex md:items-center md:justify-center'>
-                    <p className='m-5 text-xs md:text-base text-justify md:text-left'>O objetivo da NutriScale é auxiliar todas as pessoas na sua jornada rumo à alimentação saudável e balanceada, pois acreditamos que uma boa dieta é a chave para uma qualidade de vida melhor para todos. </p>
+                    <p className='m-5 text-xs md:text-base text-justify md:text-left'>Descubra uma nova maneira de monitorar sua saúde com essa balança inteligente conectada ao aplicativo exclusivo, oferecendo análises precisas e insights personalizados em tempo real. </p>
                 </div>
 
                 <div className='md:flex-1 md:h-[225px] border border-fundoHeader bg-fundoHeader rounded-custom md:flex md:items-center md:justify-center'>
-                    <p className='m-5 text-xs md:text-base text-justify md:text-left'>Nós iremos te ajudar a manter o controle da sua alimentação e também a variá-la, de acordo com as necessidades da dieta que você estiver seguindo. </p>
+                    <p className='m-5 text-xs md:text-base text-justify md:text-left'>Seja para controlar calorias, analisar nutrientes ou simplesmente manter o equilíbrio, essa ferramenta é a melhor aliada para seu bem-estar diário.  </p>
                 </div>
             </div>
           
