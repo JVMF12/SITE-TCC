@@ -7,7 +7,7 @@ export default function Sobre() {
       <HeaderSobre />
       <section className='p-6 text-center'>
         <h1 className='uppercase text-center mt-4 pb-6 font-bold text-xl md:text-3xl text-botaoSelecionado'>Sobre nós</h1>
-        <div className='flex flex-col items-center justify-center md:flex-row md:gap-6 lg:gap-16'>
+        <div className='flex flex-col items-center justify-center md:flex-row md:gap-4 lg:gap-14'>
           
           <section className='w-full max-w-full md:w-auto'>
             <div className='w-80 md:w-75 lg:w-96 p-8 h-auto flex flex-col justify-normal items-center bg-fundoHeader rounded-[8px] mt-10 text-white'>
