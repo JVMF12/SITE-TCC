@@ -9,7 +9,7 @@ export default function Home() {
         <main className='mt-16 md:mt-12 overflow-x-hidden font-openSans'>
         <section className='flex justify-center items-center font-baloo md:ml-7 '>
             <div className='flex flex-col p-4 space-y-2 justify-center items-center'>
-                <h1 className='text-botaoSelecionado text-5xl md:text-8xl font-[800] tracking-ultraWidest justify-center ml-4 '>NutriScale</h1>
+                <h1 className='text-botaoSelecionado text-[2.55rem] md:text-8xl font-[800] tracking-ultraWidest justify-center ml-4 '>NutriScale</h1>
                 <h3 className='text-black mt-2 text-[0.9rem] font-orani md:text-3xl'>A balança inteligente para controle alimentar</h3>
             </div>
          </section>
