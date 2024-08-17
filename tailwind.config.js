@@ -18,7 +18,9 @@ export default {
       fontFamily: {
         cormorant: ['Cormorant Garamond', 'serif'],
         openSans: ['Open Sans', 'sans-serif'],
-        anton: ['Anton', 'sans-serif']
+        anton: ['Anton', 'sans-serif'],
+        baloo: ['Baloo 2', 'sans-serif'],
+        orani: ['Oranienbaum', 'serif'],
       },
       letterSpacing: {
          ultraWidest: '0.25em',
