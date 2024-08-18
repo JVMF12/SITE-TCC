@@ -16,19 +16,19 @@ export default function HeaderHome() {
 
         <nav className='flex-grow hidden md:inline'>
             <ul className='flex md:justify-end space-x-4 md:space-x-6 text-xs md:text-base uppercase text-naoSelecionado font-bold'>
-                <li className='flex '>
+                <li className='flex hover:text-hover hover:duration-200'>
                     <Link to="/">Home</Link>
                 </li>
-                <li className= 'whitespace-nowrap'>
+                <li className= 'whitespace-nowrap hover:text-hover hover:duration-200'>
                     <Link to="/comousar">Como Usar</Link>
                 </li>
-                <li className='text-botaoSelecionado underline decoration-botaoSelecionado decoration-2'>
+                <li className='text-botaoSelecionado'>
                     <Link to="/materiais">Materiais</Link>
                 </li>
-                <li className=''>
+                <li className='hover:text-hover hover:duration-200'>
                     <Link to="/referencias">Referências</Link>
                 </li>
-                <li className='whitespace-nowrap'>
+                <li className='whitespace-nowrap hover:text-hover hover:duration-200'>
                     <Link to="/sobre">Sobre nós</Link>
                 </li>
             </ul>

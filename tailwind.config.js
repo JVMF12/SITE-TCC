@@ -14,6 +14,7 @@ export default {
         bgCaixa: '#2E5339',
         text: '#3f4249',
         titulo: '#FCAD00',
+        hover: '#E4B141',
       },
       fontFamily: {
         cormorant: ['Cormorant Garamond', 'serif'],
