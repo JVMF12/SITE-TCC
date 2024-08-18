@@ -19,7 +19,7 @@ export default function Home() {
          </div>
 
         <section className='flex flex-col items-center justify-center'>
-            <h2 className='uppercase text-center mt-4 mb-7 font-bold text-xl md:text-3xl text-botaoSelecionado'>
+            <h2 className='uppercase text-center mt-4 mb-7 font-bold text-xl md:text-3xl text-botaoSelecionado font-subtitulo'>
                 Qual nosso objetivo?
             </h2>
 
@@ -39,7 +39,7 @@ export default function Home() {
         </section>
 
         <section className='flex flex-col items-center justify-center'>
-            <h2 className='uppercase text-center mt-4 mb-7 font-bold text-xl md:text-3xl text-botaoSelecionado'>Porquê nos escolher?</h2>
+            <h2 className='uppercase text-center mt-4 mb-7 font-bold text-xl md:text-3xl text-botaoSelecionado font-subtitulo'>Porquê nos escolher?</h2>
 
             <div  className='flex flex-col md:flex-row p-3 md:gap-10 w-80 md:max-w-4xl md:w-[800px]  mb-10 ml-4 md:ml-2 text-white'>
                 <div className='mb-10 md:flex-1 md:h-[225px] border border-fundoHeader bg-fundoHeader rounded-custom md:flex md:items-center md:justify-center'>

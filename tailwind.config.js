@@ -21,6 +21,7 @@ export default {
         anton: ['Anton', 'sans-serif'],
         baloo: ['Baloo 2', 'sans-serif'],
         orani: ['Oranienbaum', 'serif'],
+        subtitulo: ['Source Serif ', 'serif'],
       },
       letterSpacing: {
          ultraWidest: '0.25em',
