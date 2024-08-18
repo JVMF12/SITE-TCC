@@ -13,7 +13,7 @@ function Materiais() {
       <HeaderMateriais/>
       <main className='bg-fundoSite font-openSans font-normal text-sm text-text md:flex md:flex-col md:items-center'>
       
-      <h1 className=' text-titulo font-bold text-center pt-[2rem] md:text-4xl text-xl font-subtitulo'>Materiais</h1>
+      <h1 className=' text-titulo font-bold text-center pt-[2rem] md:text-4xl text-3xl font-subtitulo'>Materiais</h1>
       <section className='border-solid border-bgCaixa border-[0.225rem]  mx-box mb-bottom mt-top rounded-customPedro md:flex md:w-[50rem] sm:max-w-[47rem]'>
         <div className='flex flex-col items-center md:justify-center md:px-inline md:w-[15rem]'>
           <h2 className='text-titulo font-semibold pt-top text-xl font-subtitulo mb-2 md:hidden'>Arduino</h2>

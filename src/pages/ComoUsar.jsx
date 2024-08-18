@@ -7,7 +7,7 @@ function Comousar() {
     <main className='bg-fundoSite min-h-screen font-openSans font-normal text-sm text-text'>
         <HeaderComo/>
         
-            <h1 className='text-titulo font-bold text-center text-xl md:text-4xl pt-[2rem] md:pt-[3rem] font-subtitulo'>Como usar</h1>
+            <h1 className='text-titulo font-bold text-center text-3xl md:text-4xl pt-[2rem] md:pt-[3rem] font-subtitulo'>Como usar</h1>
             <section className='flex px-inline mt-[1.5rem] md:justify-center'>
                 <div className='border-solid border-bgCaixa border-[0.18rem] mr-inline rounded-[.5rem] md:max-w-[20rem]'>
                     <h2 className='font-semibold text-sm text-center justify-center py-[.5rem]  px-[.5rem] md:text-lg'>Coloque a balança em uma superfície sólida e plana </h2>

@@ -6,7 +6,7 @@ export default function Sobre() {
     <div className='bg-fundoSite min-h-screen overflow-x-hidden'>
       <HeaderSobre />
       <section className='p-6 text-center'>
-        <h1 className='text-center mt-4 pb-6 text-xl md:text-4xl text-botaoSelecionado font-[900] font-subtitulo'>Sobre nós</h1>
+        <h1 className='text-center mt-4 pb-6 text-3xl md:text-4xl text-botaoSelecionado font-[900] font-subtitulo'>Sobre nós</h1>
         <div className='flex flex-col items-center justify-center lg:flex-row lg:gap-16'>
           
           <section className='w-full max-w-xs mb-6 lg:mb-0 flex justify-center'>

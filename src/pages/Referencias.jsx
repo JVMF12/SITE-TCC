@@ -7,7 +7,7 @@ export default function Referencias() {
         <HeaderRefer/>
 
         <main className=''>
-            <h1 className='text-center mt-8 pb-6 font-bold text-xl md:text-4xl text-botaoSelecionado font-subtitulo md:mt-10'>Referências</h1>
+            <h1 className='text-center mt-8 pb-6 font-bold text-3xl md:text-4xl text-botaoSelecionado font-subtitulo md:mt-10'>Referências</h1>
             
             <section className='mt-2 font-openSans text-base ml-7 md:ml-12 text-justify max-w-fit md:mr-12 md:text-xl md:mt-4 mr-8'>
                 <p className='md:mb-2'>Se você está em busca de uma alimentação saudável e balanceada, ou se quer apenas ter controle da dieta que está seguindo no momento, a nossa balança é perfeita para você!</p>
