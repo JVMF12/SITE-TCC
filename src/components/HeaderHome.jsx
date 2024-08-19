@@ -53,16 +53,16 @@ export default function HeaderHome() {
             <li className='flex justify-center w-full text-botaoSelecionado'>
                 <Link to="/">Home</Link>
             </li>
-            <li className= 'whitespace-nowrap flex justify-center'>
+            <li className= 'whitespace-nowrap flex justify-center hover:text-hover duration-100'>
                 <Link to="/comousar">Como Usar</Link>
             </li>
-            <li className='flex justify-center'>
+            <li className='flex justify-center hover:text-hover'>
                 <Link to="/materiais">Materiais</Link>
             </li>
-            <li className='flex justify-center'>
+            <li className='flex justify-center hover:text-hover'>
                 <Link to="/referencias">Referências</Link>
             </li>
-            <li className='whitespace-nowrap flex justify-center'>
+            <li className='whitespace-nowrap flex justify-center hover:text-hover'>
                 <Link to="/sobre">Sobre nós</Link>
             </li>
         </ul>
