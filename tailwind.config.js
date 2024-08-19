@@ -28,7 +28,7 @@ export default {
          ultraWidest: '0.25em',
       },
       borderRadius: {
-        custom: '2.188rem',
+        custom: '1.4rem',
         customPedro: '1.188rem'
       },
       margin: {
