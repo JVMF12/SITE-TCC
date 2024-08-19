@@ -9,9 +9,9 @@ export default function Sobre() {
         <h1 className='text-center mt-4 pb-6 text-3xl md:text-4xl text-botaoSelecionado font-[900] font-subtitulo'>Sobre nós</h1>
         <div className='flex flex-col items-center justify-center lg:flex-row lg:gap-16'>
           
-          <section className='w-full max-w-xs mb-6 lg:mb-0 flex justify-center'>
+          <section className='w-full max-w-[18rem] max-h-[27rem] mb-6 lg:mb-0 flex justify-center'>
             <div className='w-80 p-8 h-auto flex flex-col justify-center items-center bg-fundoHeader rounded-[8px] text-white'>
-              <img className='w-48 h-48' src="/pedroca.svg" alt="Pedro H. Gomes" />
+              <img className='w-40 h-40' src="/pedroca.svg" alt="Pedro H. Gomes" />
               <p className='font-bold text-2xl pt-6 font-sans'>Pedro H. Gomes</p>
               <p className='text-xl'><span className='font-bold'>Idade:</span> 17 anos</p>
               <p className='text-xl'><span className='font-bold'>Formação:</span> Unasp- Técnico de Informática</p>
@@ -21,9 +21,9 @@ export default function Sobre() {
             </div>
           </section>
 
-          <section className='w-full max-w-xs mb-6 lg:mb-0 flex justify-center'>
+          <section className='w-full max-w-[18rem] max-h-[27rem] mb-6 lg:mb-0 flex justify-center'>
             <div className='w-80 p-8 h-auto flex flex-col justify-center items-center bg-fundoHeader rounded-[8px] text-white'>
-              <img className='w-48 h-48' src="/julia.svg" alt="Julia Schiavi" />
+              <img className='w-40 h-40' src="/julia.svg" alt="Julia Schiavi" />
               <p className='font-bold text-2xl pt-6 font-sans'>Julia Schiavi</p>
               <p className='text-xl'><span className='font-bold'>Idade:</span> 18 anos</p>
               <p className='text-xl'><span className='font-bold'>Formação:</span> Unasp- Técnico de Informática</p>
@@ -33,9 +33,9 @@ export default function Sobre() {
             </div>
           </section>
 
-          <section className='w-full max-w-xs mb-6 lg:mb-0 flex justify-center'>
+          <section className='w-full max-w-[18rem] max-h-[27rem] mb-6 lg:mb-0 flex justify-center'>
             <div className='w-80 p-8 h-auto flex flex-col justify-center items-center bg-fundoHeader rounded-[8px] text-white'>
-              <img className='w-48 h-48' src="/joao.svg" alt="João Victor Martins" />
+              <img className='w-40 h-40' src="/joao.svg" alt="João Victor Martins" />
               <p className='font-bold text-2xl pt-6 font-sans'>João Victor Martins</p>
               <p className='text-xl'><span className='font-bold'>Idade:</span> 17 anos</p>
               <p className='text-xl'><span className='font-bold'>Formação:</span> Unasp- Técnico de Informática</p>
