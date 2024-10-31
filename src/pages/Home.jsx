@@ -4,21 +4,21 @@ import HeaderHome from '../components/HeaderHome'
 
 export default function Home() {
   return (
-    <div className='bg-fundoSite min-h-screen'>
+    <div className='bg-fundo min-h-screen'>
         <HeaderHome/>
         <main className='mt-16 md:mt-12 overflow-x-hidden font-openSans'>
-        <section className='flex justify-center items-center font-baloo md:ml-7 '>
+        <section className='flex justify-center items-center font-barlow md:ml-7 mb-[5.5rem]'>
             <div className='flex flex-col p-4 space-y-2 justify-center items-center'>
                 <h1 className='text-botaoSelecionado text-[2.55rem] md:text-7xl lg:text-8xl font-[800] tracking-ultraWidest justify-center ml-4 '>NutriScale</h1>
-                <h3 className='text-black mt-2 text-[0.9rem] font-orani md:text-3xl'>A balança inteligente para controle alimentar</h3>
+                <h3 className='text-white mt-2 text-[0.9rem] font-poppins md:text-2xl'>A balança inteligente para controle alimentar</h3>
             </div>
          </section>
 
-         <div className='"mt-5 p-6 flex'>
-               <img src={Balanca} alt="Ilustração de uma balança de alimentos" className='mx-auto mb-3 md:w-120 md:h-80 max-w-120 max-h-80'/>
+         <div className='"mt-10 p-6 flex'>
+               <img src={Balanca} alt="Ilustração de uma balança de alimentos" className='mx-auto mb-3 md:w-150 md:h-100 max-w-150 max-h-80'/>
          </div>
 
-        <section className='flex flex-col items-center justify-center'>
+        <section className='flex flex-col items-center justify-center bg-fundoSite'>
             <h2 className='uppercase text-center mt-4 mb-7 font-bold text-xl md:text-3xl text-botaoSelecionado font-subtitulo'>
                 Qual nosso objetivo?
             </h2>

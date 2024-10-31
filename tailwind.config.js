@@ -23,6 +23,8 @@ export default {
         baloo: ['Baloo 2', 'sans-serif'],
         orani: ['Oranienbaum', 'serif'],
         subtitulo: ['Source Serif ', 'serif'],
+        barlow: ['Barlow Semi Condensed', 'sans-serif'],
+        poppins: ['Poppins', 'sans-serif']
       },
       letterSpacing: {
          ultraWidest: '0.25em',
@@ -47,6 +49,9 @@ export default {
       custom: {
         with: '50rem',
         max: '50rem',
+      },
+      backgroundImage: {
+        'fundo': "url('./fundo.svg')"
       }
     },
   },
