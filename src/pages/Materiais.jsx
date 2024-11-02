@@ -11,7 +11,7 @@ import HeaderMateriais from '../components/HeaderMateriais'
 const Material = ({imagem, nome, descricao, preco}) => (
   <div className='group cursor-default bg-fundoHeader w-72 h-80 shadow-md rounded-md overflow-hidden'>
     <div className = 'h-40 relative overflow-hidden'>
-      <img src={imagem} alt={nome} className='absolute top-0 left-0 h-full w-full object-cover bg-white' />
+      <img src={imagem} alt={nome} className='absolute top-0 left-0 h-full w-full object-contain bg-white' />
     </div>
     <div className='p-5 text-white'>
       <h2 className='text-xl font-semibold'>{nome}</h2>
