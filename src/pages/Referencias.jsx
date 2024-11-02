@@ -20,8 +20,8 @@ export default function Referencias() {
                 </div>
             </section>
 
-            <section className='mt-2 font-openSans text-base ml-7 text-justify max-w-fit md:mr-12 md:text-xl md:mt-8 mr-8 text-white md:flex md:justify-center'>
-              <div className='mt-6 text-center border-4 border-titulo rounded-[0.75rem] mb-2 md:w-[26.688rem]'>
+            <section className='mt-2 font-openSans text-base ml-7 text-justify max-w-fit md:mr-12 md:text-xl md:mt-8 mr-8 text-white md:flex md:justify-center md:'>
+              <div className='mt-6 text-center border-4 border-titulo rounded-[0.75rem] mb-2 md:w-[26.688rem] items-center'>
                 <h2 className='mt-5'>Importância da dieta saudável na melhora da qualidade de vida</h2>
                 <button className='border-2 border-titulo mt-4 mb-5 px-6 rounded-[0.75rem]'>Abrir</button>
               </div>
