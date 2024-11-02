@@ -22,7 +22,7 @@ export default {
         anton: ['Anton', 'sans-serif'],
         baloo: ['Baloo 2', 'sans-serif'],
         orani: ['Oranienbaum', 'serif'],
-        subtitulo: ['Source Serif ', 'serif'],
+        subtitulo: ['Barlow Semi Condensed', 'sans-serif'],
         barlow: ['Barlow Semi Condensed', 'sans-serif'],
         poppins: ['Poppins', 'sans-serif']
       },
