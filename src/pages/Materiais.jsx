@@ -16,7 +16,7 @@ const Material = ({imagem, nome, descricao, preco}) => (
     <div className='p-5 text-white'>
       <h2 className='text-xl font-semibold'>{nome}</h2>
       <p className='text-base pb-3'>{descricao}</p>
-      <p className='text-lg font-bold'>{preco}</p>
+      <p className='text-lg font-bold text-titulo'>{preco}</p>
     </div>
   </div>
 );
