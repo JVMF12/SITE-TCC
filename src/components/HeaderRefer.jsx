@@ -50,19 +50,19 @@ export default function HeaderHome() {
                 <div className='w-6 h-1 rotate-45 absolute bg-white'></div>
                 <div className='w-6 h-1 -rotate-45 absolute bg-white'></div>
             </button>
-            <li className='flex justify-center w-full hover:text-hover duration-100'>
+            <li className='flex justify-start ml-5 text-base w-full hover:text-hover duration-100'>
                 <Link to="/">Home</Link>
             </li>
-            <li className= 'whitespace-nowrap flex justify-center hover:text-hover duration-100'>
+            <li className= 'whitespace-nowrap flex justify-start ml-5 text-base hover:text-hover duration-100'>
                 <Link to="/comousar">Como Usar</Link>
             </li>
-            <li className='flex justify-center hover:text-hover duration-100'>
+            <li className='flex justify-start ml-5 text-base hover:text-hover duration-100'>
                 <Link to="/materiais">Materiais</Link>
             </li>
-            <li className='flex justify-center text-botaoSelecionado'>
+            <li className='flex justify-start ml-5 text-base text-botaoSelecionado'>
                 <Link to="/referencias">Referências</Link>
             </li>
-            <li className='whitespace-nowrap flex justify-center hover:text-hover duration-100'>
+            <li className='whitespace-nowrap flex justify-start ml-5 text-base hover:text-hover duration-100'>
                 <Link to="/sobre">Sobre nós</Link>
             </li>
         </ul>
