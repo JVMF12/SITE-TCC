@@ -47,6 +47,9 @@ export default {
       custom: {
         with: '50rem',
         max: '50rem',
+      }, 
+      backgroundImage: {
+        'fundo': "url('/Fundo.svg')"
       }
     },
   },

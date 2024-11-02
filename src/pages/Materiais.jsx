@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useState, useEffect } from 'react'
 import arduino from '/arduino.png'
 import clcarga from '/clcarga.png'
 import lcd from '/LCD.png'
@@ -7,6 +7,82 @@ import protoboard from '/protoboard.png'
 import workplate from '/workplate.png'
 import HeaderMateriais from '../components/HeaderMateriais'
 
+
+const Material = ({imagem, nome, descricao, preco}) => (
+  <div className='group cursor-default bg-fundoHeader w-72 h-80 shadow-md rounded-md overflow-hidden'>
+    <div className = 'h-40 relative overflow-hidden'>
+      <img src={imagem} alt={nome} className='absolute top-0 left-0 h-full w-full object-cover bg-white' />
+    </div>
+    <div className='p-5 text-white'>
+      <h2 className='text-xl font-semibold'>{nome}</h2>
+      <p className='text-base pb-3'>{descricao}</p>
+      <p className='text-lg font-bold'>{preco}</p>
+    </div>
+  </div>
+);
+
+const DesktopPecas = () => {  
+  const produtos = [
+    {imagem: "/arduino.png", nome: "Arduino Uno R3", descricao: "Placa de Desenvolvimento", preco: "R$ 249,00"},
+    {imagem: "/clcarga.png", nome: "Célula de Carga", descricao: "Sensor de Peso", preco: "R$ 7,90"},
+    {imagem: "/modulo.png", nome: "Módulo HX711", descricao: "Módulo que amplifica sinal da célula de carga", preco: "R$ 5,90"},
+    {imagem: "protoboard.png", nome: "Protoboard", descricao: "Placa de ensaio.", preco: "R$ 7,50"}, 
+    {imagem: "/workplate.png", nome: "Workplate", descricao: "Base de Trabalho", preco: "R$14,90"},
+    {imagem: "/LCD.png", nome: "Display LCD", descricao: "Display que mostra o peso", preco: "R$ 23,90"},
+    {imagem: "/BluetoothHC05.png", nome: "Módulo Bluetooth HC-05", descricao: "Conecta o arduino e dispositivos bluetooth", preco: "R$ 31,25"}
+  ];
+
+  const [currentIndex, setCurrentIndex] = useState(0);
+  const visibleProducts = 3;
+
+  const nextSlide = () => {
+    setCurrentIndex((prevIndex) => (prevIndex + 1) % (produtos.length - visibleProducts + 1));
+  };
+
+  const prevSlide = () => {
+    setCurrentIndex((prevIndex) => prevIndex === 0 ? produtos.length - visibleProducts: prevIndex - 1);
+  };
+
+  useEffect(() => {
+    const interval = setInterval(() => {
+      nextSlide();
+    }, 5000);
+
+    return () => clearInterval(interval);
+  }, [currentIndex]);
+
+  return (
+    <section>
+      <div className='mx-10 mt-10 mb-14 hidden lg:flex lg:items-center lg:flex-col lg:gap-8 lg:p-8'>
+        <div className='relative flex items-center justify-center'>
+          <button onClick={prevSlide} className=' px-4 py-2 rounded-full flex items-center justify-center relative z-10'>
+            <svg className='w-6 h-6' fill='none' stroke='currentColor' viewBox='0 0 24 24' xmlns='http://www.w3.org/2000/svg'>
+              <path strokeLinecap = "round" strokeLinejoin='round' strokeWidth='2' d='M15 19l-7-7 7-7'></path>
+            </svg>
+          </button>
+
+          <div className='flex overflow-hidden space-x-4 gap-5'>
+            {produtos.slice(currentIndex, currentIndex + visibleProducts).map((produto, index) => (
+              <Material
+                key={index}
+                imagem={produto.imagem}
+                nome = {produto.nome}
+                descricao = {produto.descricao}
+                preco = {produto.preco}
+              />
+            ))}
+          </div>
+          <button onClick={nextSlide} className= 'px-4 py-2 rounded-full flex items-center justify-center relative z-10'>
+            <svg className='w-6 h-6' fill='none' stroke='currentColor' viewBox='0 0 24 24' xmlns='http://www.w3.org/2000/svg'>
+              <path strokeLinecap='round' strokeLinejoin='round' strokeWidth='2' d = "M9 5l7 7-7 7"></path>
+            </svg>
+          </button>
+        </div>
+      </div>
+    </section>
+  )
+}
+
 function Materiais() {
   return (
     <div>
@@ -14,79 +90,8 @@ function Materiais() {
       <main className='bg-fundoSite font-openSans font-normal text-sm text-text md:flex md:flex-col md:items-center'>
       
       <h1 className=' text-titulo font-bold text-center pt-[2rem] md:text-4xl text-3xl font-subtitulo'>Materiais</h1>
-      <section className='border-solid border-bgCaixa border-[0.225rem]  mx-box mb-bottom mt-top rounded-customPedro md:flex md:w-[50rem] sm:max-w-[47rem]'>
-        <div className='flex flex-col items-center md:justify-center md:px-inline md:w-[15rem]'>
-          <h2 className='text-titulo font-semibold pt-top text-xl font-subtitulo mb-2 md:hidden'>Arduino</h2>
-          <img src={arduino} alt="imagem de uma peça arduino" className='my-inline  md:h-[7rem] md:w-[10rem]'/>
-          <h2 className='text-titulo font-semibold pt-top text-xl font-subtitulo mb-2 hidden md:block'>Arduino</h2>
-        </div>
-        <div className='bg-bgCaixa rounded-b-[.92rem] flex flex-col items-center md:rounded-r-[.92rem] md:rounded-l-none md:flex md:flex-col md:justify-center md:max-w-[32.5rem] md:py-desk md:px-desk text-white'>
-          <p className='mb-bottom pt-top flex text-justify p-inline '>O Arduino é uma plataforma eletrónica de código aberto que permite integrar hardware e software de forma fácil para desenvolver projetos eletrónicos.</p>
-          <p className='pb-top'>Preço: R$ 249,00</p>
-        </div>
-        
-      </section>
-
-      <section className='border-solid border-bgCaixa border-[0.225rem] mx-box mb-bottom mt-top rounded-customPedro md:flex md:w-[50rem] sm:max-w-[47rem]'>
-        <div className='flex flex-col items-center md:justify-center md:px-inline md:w-[15rem]'>
-          <h2 className='text-titulo font-semibold pt-top text-xl md:text-center font-subtitulo mb-2 md:hidden'>Célula de carga</h2>          
-          <img src={clcarga} alt="imagem de uma célula de carga" className='my-inline '/>
-          <h2 className='text-titulo font-semibold pt-top text-xl md:text-center font-subtitulo mb-2 hidden md:block'>Célula de carga</h2>
-        </div>
-        <div className='bg-bgCaixa rounded-b-[.92rem] flex flex-col items-center md:rounded-r-[.92rem] md:rounded-l-none md:flex md:flex-col md:justify-center md:max-w-[32.5rem] md:py-desk md:px-desk text-white'>
-          <p className='mb-bottom flex text-justify pt-top p-inline'>Célula de carga é um sensor eletromecânico que mede força ou massa. É um transdutor de força que converte a carga que atua sobre ele numa saída elétrica mensurável.
-          </p>
-          <p className='pb-top'>Preço: R$ 7,90</p>
-        </div>
-      </section>
-
-      <section className='border-solid border-bgCaixa border-[0.225rem] mx-box mb-bottom mt-top rounded-customPedro md:flex md:w-[50rem] sm:max-w-[47rem]'>
-        <div className='flex flex-col items-center md:justify-center md:px-inline md:w-[15rem]'>
-          <h2 className='text-titulo font-semibold pt-top text-xl md:text-center font-subtitulo mb-2 md:hidden'>Módulo HX711</h2>
-          <img src={modulo} alt="imagem de um módulo hx711" className='my-inline '/>
-          <h2 className='text-titulo font-semibold pt-top text-xl md:text-center font-subtitulo mb-2 hidden md:block'>Módulo HX711</h2>
-        </div>
-        <div className='bg-bgCaixa rounded-b-[.92rem] flex flex-col items-center md:rounded-r-[.92rem] md:rounded-l-none md:flex md:flex-col md:justify-center md:max-w-[32.5rem] md:py-desk md:px-desk text-white'>
-          <p className='mb-bottom flex text-justify pt-top p-inline'>Módulo conversor e amplificador de 24 bits, geralmente utilizado para amplificar sinais de células de carga, possibilitando a leitura através de um microntrolador como PIC, Arduino, Rasberry Pi, entre outros.</p>
-          <p className='pb-top'>Preço: R$ 5,90</p>
-        </div>
-      </section>
-
-      <section className='border-solid border-bgCaixa border-[0.225rem] mx-box mb-bottom mt-top rounded-customPedro md:flex md:w-[50rem] sm:max-w-[47rem]'>
-        <div className='flex flex-col items-center md:justify-center md:px-inline md:w-[15rem]'>
-          <h2 className='text-titulo font-semibold pt-top text-xl md:text-center font-subtitulo mb-2 md:hidden'>Protoboard</h2>
-          <img src={protoboard} alt="imagem de uma protoboard" className='my-inline '/>
-          <h2 className='text-titulo font-semibold pt-top text-xl md:text-center font-subtitulo mb-2 hidden md:block'>Protoboard</h2>
-        </div>
-        <div className='bg-bgCaixa rounded-b-[.92rem] flex flex-col items-center md:rounded-r-[.92rem] md:rounded-l-none md:flex md:flex-col md:justify-center md:max-w-[32.5rem] md:py-desk md:px-desk text-white'>
-          <p className='mb-bottom flex text-justify pt-top p-inline'>Protoboard é uma placa de ensaio que serve como um protótipo de um aparelho eletrônico, com uma matriz de contatos que possibilita construir circuitos de teste sem que haja necessidade de solda e, assim, garantindo segurança e agilidade em diferentes atividades.</p>
-          <p className='pb-top'>Preço: R$ 7,50</p>
-        </div>
-      </section>
-
-      <section className='border-solid border-bgCaixa border-[0.225rem] mx-box mb-bottom mt-top rounded-customPedro md:flex md:w-[50rem] sm:max-w-[47rem]'>
-        <div className='flex flex-col items-center md:justify-center md:px-inline md:w-[15rem]'>
-          <h2 className='text-titulo font-semibold pt-top text-xl md:text-center font-subtitulo mb-2 md:hidden'>Workplate</h2>
-          <img src={workplate} alt="imagem de uma workplate" className='my-inline '/>
-          <h2 className='text-titulo font-semibold pt-top text-xl md:text-center font-subtitulo mb-2 hidden md:block'>Workplate</h2>
-        </div>
-        <div className='bg-bgCaixa rounded-b-[.92rem] flex flex-col items-center md:rounded-r-[.92rem] md:rounded-l-none md:flex md:flex-col md:justify-center md:max-w-[32.5rem] md:py-desk md:px-desk text-white'>
-          <p className='mb-bottom flex text-justify pt-top p-inline'>A WorkPlate 400 é uma base de trabalho para montar sua placa Arduino junto a uma protoboard de 400 furos, criando assim um ambiente ideal para o desenvolvimento de projetos de uma forma prática e dinâmica.</p>
-          <p className='pb-top'>Preço: R$ 14,90</p>
-        </div>
-      </section>
-
-      <section className='border-solid border-bgCaixa border-[0.225rem] mx-box mt-top rounded-customPedro md:flex md:w-[50rem] sm:max-w-[47rem] md:mb-bottom'>
-        <div className='flex flex-col items-center md:justify-center md:px-inline md:w-[15rem]'>
-          <h2 className='text-titulo font-semibold pt-top text-xl md:text-center font-subtitulo mb-2 md:hidden'>Display LCD</h2>
-          <img src={lcd} alt="imagem de um display lcd" className='my-inline '/>
-          <h2 className='text-titulo font-semibold pt-top text-xl md:text-center font-subtitulo mb-2 hidden md:block'>Display LCD</h2>
-        </div>
-        <div className='bg-bgCaixa rounded-b-[.92rem] flex flex-col items-center md:rounded-r-[.92rem] md:rounded-l-none md:flex md:flex-col md:justify-center md:max-w-[32.5rem] md:py-desk md:px-desk text-white'>
-          <p className='mb-bottom flex text-justify pt-top p-inline'>O display LCD 16x2 é um pequeno e versátil ecrã de cristal líquido (LCD) com 16 colunas e 2 linhas para escrever. É utilizado para projetos de programação, como robótica e automação residencial, e é compatível com vários sistemas microcontroladores, como Arduino, PIC e Atmel.</p>
-          <p className='pb-top'>Preço: R$ 23,90</p>
-        </div>
-      </section>
+      
+      <DesktopPecas />
     </main>
     </div>
     

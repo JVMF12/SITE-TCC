@@ -1,13 +1,14 @@
 import React from 'react'
 import Balanca from '/balança.svg'
 import HeaderHome from '../components/HeaderHome'
+import ImgFundo from '/Fundo.svg'
 
 export default function Home() {
   return (
     <div className='bg-fundoSite min-h-screen'>
         <HeaderHome/>
-        <main className='mt-16 md:mt-12 overflow-x-hidden font-openSans'>
-        <section className='flex justify-center items-center font-baloo md:ml-7 '>
+        <main className='mt-16 md:mt-12 overflow-x-hidden font-openSans bg-fundo'>
+        <section className='flex justify-center items-center font-baloo md:ml-7 bg: '>
             <div className='flex flex-col p-4 space-y-2 justify-center items-center'>
                 <h1 className='text-botaoSelecionado text-[2.55rem] md:text-7xl lg:text-8xl font-[800] tracking-ultraWidest justify-center ml-4 '>NutriScale</h1>
                 <h3 className='text-black mt-2 text-[0.9rem] font-orani md:text-3xl'>A balança inteligente para controle alimentar</h3>
