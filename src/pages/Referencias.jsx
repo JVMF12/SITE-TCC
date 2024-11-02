@@ -3,26 +3,29 @@ import HeaderRefer from '../components/HeaderRefer'
 
 export default function Referencias() {
   return (
-    <div className='bg-fundoSite min-h-screen'>
+    <div className='bg-fundo min-h-screen overflow-auto md:overflow-hidden'>
         <HeaderRefer/>
 
-        <main className=''>
-            <h1 className='text-center mt-8 pb-6 font-bold text-3xl md:text-4xl text-botaoSelecionado font-subtitulo md:mt-10'>Referências</h1>
+        <main className='text-white'>
+            <h1 className='text-center mt-8 pb-6 font-bold text-3xl md:text-4xl text-botaoSelecionado font-barlow md:mt-10'>Referências</h1>
             
-            <section className='mt-2 font-openSans text-base ml-7 md:ml-12 text-justify max-w-fit md:mr-12 md:text-xl md:mt-4 mr-8'>
-                <p className='md:mb-2'>Se você está em busca de uma alimentação saudável e balanceada, ou se quer apenas ter controle da dieta que está seguindo no momento, a nossa balança é perfeita para você!</p>
-                <br />
-                <p className='md:mb-2'>- Seguir uma dieta saudável e balanceada é de extrema importância para pessoas que estão buscando a hipertrofia ou apenas uma melhora na qualidade de vida. Nossa balança irá te ajudar nessa jornada!</p>
-                <br />
-                <p className='md:mb-2'>- Estudos mostram que é de extrema importância ter algo para te auxiliar ou acompanhar na sua dieta, o que é feito por nossa balança;</p>
-                <br />
-                <p className='md:mb-2'>- A balança oferece sugestões de novos alimentos para sua dieta, criando bons e variados hábitos de alimentação;</p>
-                <br />
-                <p className='md:mb-2'>- Nossos planos alimentares são fracionados entre 5 e 6 refeições, quantidade ideal de refeições para uma alimentação balanceada.</p>
+            <section className='mt-2 font-openSans text-base ml-7 md:ml-12 text-justify max-w-fit md:mr-12 md:text-xl md:mt-4 mr-8 text-white md:flex'>
+                <div className = 'mt-6 text-center border-4 border-titulo rounded-[0.75rem] md:mr-20 md:ml-32 md:w-[26.688rem]'>
+                  <h2 className='mt-5'>Importância do planejamento alimentar para o emagrecimento</h2>
+                  <button className='border-2 border-titulo mt-4 mb-5 px-6 rounded-[0.75rem]'>Abrir</button>
+                </div>
+                <div className='mt-6 text-center border-4 border-titulo rounded-[0.75rem] md:ml-24 md:w-[26.688rem] '>
+                  <h2 className='mt-5'>Bons e variados hábitos de alimentação</h2>
+                  <button className='border-2 border-titulo mt-4 mb-5 px-6 md:px-7 md:mt-10 rounded-[0.75rem]'>Abrir</button>
+                </div>
             </section>
 
-            <br />
-            <br />
+            <section className='mt-2 font-openSans text-base ml-7 text-justify max-w-fit md:mr-12 md:text-xl md:mt-8 mr-8 text-white md:flex md:justify-center'>
+              <div className='mt-6 text-center border-4 border-titulo rounded-[0.75rem] mb-2 md:w-[26.688rem]'>
+                <h2 className='mt-5'>Importância da dieta saudável na melhora da qualidade de vida</h2>
+                <button className='border-2 border-titulo mt-4 mb-5 px-6 rounded-[0.75rem]'>Abrir</button>
+              </div>
+            </section>
         </main>
     </div>
   )
