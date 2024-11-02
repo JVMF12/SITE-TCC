@@ -36,23 +36,26 @@ export default function Home() {
 
         <section className='flex flex-col items-center justify-center bg-fundoSite '>
 
-            <h2 className='uppercase text-center mt-10 mb-4 font-bold text-xl md:text-3xl text-botaoSelecionado font-subtitulo'>Qual nosso objetivo?</h2>
+            <h2 className='uppercase text-center mt-14 mb-4 font-bold text-xl md:text-3xl text-botaoSelecionado font-subtitulo'>Qual nosso objetivo?</h2>
 
             <div className='mx-4 mb-10'>
-                <div className='px-2'>
-                    <div className='md:flex'>
+                <div className='px-2 text-justify md:flex md:flex-col md:items-center'>
+                    <div className='md:flex gap-10 my-10'>
                         <div>
                             <h3 className='flex justify-center text-titulo font-bold text-center text-2xl my-[1.5rem] font-subtitulo'>Alimentação saudável</h3>
-                            <p className=''>Auxiliar todas as pessoas na sua jornada rumo à alimentação saudável e balanceada, pois uma boa dieta é a chave para uma qualidade de vida melhor.</p>
+                            <p className='md:max-w-[27.5rem] '>Auxiliar todas as pessoas na sua jornada rumo à alimentação saudável e balanceada, pois uma boa dieta é a chave para uma qualidade de vida melhor.</p>
                         </div>
+                       <div className='md:flex md:flex-col md:mt-6'>
+                            <img src={Topico} alt="" className='hidden md:block md:h-[10rem] md:w-[0.2rem] h-[6rem] w-[0.8rem]' />
+                       </div>
                         <div>
                             <h3 className='flex justify-center text-titulo font-bold text-center text-2xl my-[1.5rem] font-subtitulo'>Variedade</h3>
-                            <p>Nós iremos te ajudar a manter o controle da sua alimentação e também a variá-la, de acordo com as necessidades da dieta que você estiver seguindo.</p>
+                            <p className='md:max-w-[27.5rem] '>Nós iremos te ajudar a manter o controle da sua alimentação e também a variá-la, de acordo com as necessidades da dieta que você estiver seguindo.</p>
                         </div>
                     </div>
                     <div>
                         <h3 className='flex justify-center text-titulo font-bold text-center text-2xl my-[1.5rem] font-subtitulo'>Praticidade</h3>
-                        <p>A NutriScale irá te ajudar a conxiliar uma alimentação saudável com a correria do seu dia a dia, isso através das funcionalidades presentes naa nossa balança inteligente de alimentos.</p>
+                        <p className='md:max-w-[27.5rem] '>A NutriScale irá te ajudar a conxiliar uma alimentação saudável com a correria do seu dia a dia, isso através das funcionalidades presentes na nossa balança inteligente de alimentos.</p>
                     </div>
                 </div>
                 
