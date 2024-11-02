@@ -3,7 +3,7 @@ import HeaderSobre from '../components/HeaderSobre';
 
 export default function Sobre() {
   return (
-    <div className='bg-fundoSite min-h-screen overflow-x-hidden'>
+    <div className='bg-fundo bg-repeat bg-[length:100vh] min-h-screen overflow-x-hidden'>
       <HeaderSobre />
       <section className='p-6 text-center'>
         <h1 className='text-center mt-4 pb-6 text-3xl md:text-4xl text-botaoSelecionado font-[900] font-subtitulo'>Sobre nós</h1>

@@ -55,7 +55,7 @@ const DesktopPecas = () => {
     <section>
       <div className='mx-10 mt-10 mb-14 hidden lg:flex lg:items-center lg:flex-col lg:gap-8 lg:p-8'>
         <div className='relative flex items-center justify-center'>
-          <button onClick={prevSlide} className=' px-4 py-2 rounded-full flex items-center justify-center relative z-10'>
+          <button onClick={prevSlide} className=' px-4 py-2 rounded-full flex items-center justify-center relative z-10 text-white'>
             <svg className='w-6 h-6' fill='none' stroke='currentColor' viewBox='0 0 24 24' xmlns='http://www.w3.org/2000/svg'>
               <path strokeLinecap = "round" strokeLinejoin='round' strokeWidth='2' d='M15 19l-7-7 7-7'></path>
             </svg>
@@ -72,7 +72,7 @@ const DesktopPecas = () => {
               />
             ))}
           </div>
-          <button onClick={nextSlide} className= 'px-4 py-2 rounded-full flex items-center justify-center relative z-10'>
+          <button onClick={nextSlide} className= 'px-4 py-2 rounded-full flex items-center justify-center relative z-10 text-white'>
             <svg className='w-6 h-6' fill='none' stroke='currentColor' viewBox='0 0 24 24' xmlns='http://www.w3.org/2000/svg'>
               <path strokeLinecap='round' strokeLinejoin='round' strokeWidth='2' d = "M9 5l7 7-7 7"></path>
             </svg>
@@ -88,7 +88,7 @@ function Materiais() {
   return (
     <div>
       <HeaderMateriais/>
-      <main className='bg-fundoSite font-openSans font-normal text-sm text-text md:flex md:flex-col md:items-center'>
+      <main className='bg-fundo bg-repeat bg-[length:100vh] font-openSans font-normal text-sm text-text md:flex md:flex-col md:items-center'>
       
       <h1 className=' text-titulo font-bold text-center pt-[2rem] md:text-4xl text-3xl font-subtitulo'>Materiais</h1>
       
