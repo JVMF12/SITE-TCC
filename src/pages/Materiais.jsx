@@ -5,6 +5,7 @@ import lcd from '/LCD.png'
 import modulo from '/modulo.png'
 import protoboard from '/protoboard.png'
 import workplate from '/workplate.png'
+import fundo from '/fundo.svg'
 import HeaderMateriais from '../components/HeaderMateriais'
 
 
