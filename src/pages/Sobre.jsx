@@ -37,7 +37,7 @@ export default function Sobre() {
             <div className='w-80 p-8 h-auto flex flex-col justify-center items-center bg-fundoHeader rounded-[8px] text-white'>
               <img className='w-40 h-40' src="/joao.svg" alt="João Victor Martins" />
               <p className='font-bold text-2xl pt-6 font-sans'>João Victor Martins</p>
-              <p className='text-xl'><span className='font-bold'>Idade:</span> 17 anos</p>
+              <p className='text-xl'><span className='font-bold'>Idade:</span> 18 anos</p>
               <p className='text-xl'><span className='font-bold'>Formação:</span> Unasp- Técnico de Informática</p>
               <a className='pt-6' href="https://www.instagram.com/jv.martins21?igsh=MW9hbmh0aDIzMHh2ZA==">
                 <img src="/insta.svg" alt="Instagram" />
