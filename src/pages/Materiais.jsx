@@ -14,9 +14,9 @@ const Material = ({imagem, nome, descricao, preco}) => (
       <img src={imagem} alt={nome} className='absolute top-0 left-0 h-full w-full object-contain bg-white' />
     </div>
     <div className='p-5 text-white'>
-      <h2 className='text-xl font-semibold'>{nome}</h2>
+      <h2 className='text-xl font-bold'>{nome}</h2>
       <p className='text-base pb-3'>{descricao}</p>
-      <p className='text-lg font-bold text-titulo'>{preco}</p>
+      <p className='text-lg font-semibold text-titulo'>{preco}</p>
     </div>
   </div>
 );
