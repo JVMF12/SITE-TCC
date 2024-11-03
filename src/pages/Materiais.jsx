@@ -102,7 +102,7 @@ const MobilePecas = () => {
 
   return (
     <div className='bg-fundoHeader lg:hidden p-4 sm:max-w-[80%] sm:ml-20' >
-      <div className='relative flex flex-col items-center  rounded-lg shadow-lg overflow-hidden margin-2 '>
+      <div className='relative flex flex-col items-center  rounded-lg shadow-lg overflow-hidden margin-2 min-h-[100vh]'>
         <img src={componentes[currentIndex].imagem} alt={componentes[currentIndex].nome} className='md:w-full h-52 object-contain p-2 bg-gray-100'/>
         <div className='p-4 md:w-full text-center text-white'>
           <h2 className='text-xl font-bold mb-2'>{componentes[currentIndex].nome}</h2>
