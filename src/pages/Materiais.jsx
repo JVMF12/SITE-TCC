@@ -10,11 +10,11 @@ import HeaderMateriais from '../components/HeaderMateriais'
 
 
 const Material = ({imagem, nome, descricao, preco}) => (
-  <div className='group cursor-default bg-fundoHeader w-72 h-80 shadow-md rounded-md overflow-hidden'>
+  <div className='group cursor-default bg-fundoHeader w-72 h-80 shadow-md rounded-md overflow-hidden border-2'>
     <div className = 'h-40 relative overflow-hidden'>
       <img src={imagem} alt={nome} className='absolute top-0 left-0 h-full w-full object-contain bg-white' />
     </div>
-    <div className='p-5 text-white'>
+    <div className='p-5 text-white '>
       <h2 className='text-xl font-bold'>{nome}</h2>
       <p className='text-base pb-3'>{descricao}</p>
       <p className='text-lg font-semibold text-titulo'>{preco}</p>
@@ -62,7 +62,7 @@ const DesktopPecas = () => {
             </svg>
           </button>
 
-          <div className='flex overflow-hidden space-x-4 gap-5'>
+          <div className='flex overflow-hidden space-x-4 gap-5 '>
             {produtos.slice(currentIndex, currentIndex + visibleProducts).map((produto, index) => (
               <Material
                 key={index}
@@ -101,10 +101,10 @@ const MobilePecas = () => {
   const prevSlide = () => setCurrentIndex((prevIndex) => (prevIndex - 1 + componentes.length) % componentes.length);
 
   return (
-    <div className='bg-fundoHeader lg:hidden p-4'>
-      <div className='relative flex flex-col items-center  rounded-lg shadow-lg overflow-hidden'>
-        <img src={componentes[currentIndex].imagem} alt={componentes[currentIndex].nome} className='w-full h-52 object-contain p-2 bg-gray-100'/>
-        <div className='p-4 w-full text-center text-white'>
+    <div className='bg-fundoHeader lg:hidden p-4 sm:max-w-[80%] sm:ml-20' >
+      <div className='relative flex flex-col items-center  rounded-lg shadow-lg overflow-hidden margin-2 '>
+        <img src={componentes[currentIndex].imagem} alt={componentes[currentIndex].nome} className='md:w-full h-52 object-contain p-2 bg-gray-100'/>
+        <div className='p-4 md:w-full text-center text-white'>
           <h2 className='text-xl font-bold mb-2'>{componentes[currentIndex].nome}</h2>
           <p className='text-sm p-2'>{componentes[currentIndex].descricao}</p>
         </div>
