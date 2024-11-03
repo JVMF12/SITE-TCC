@@ -84,6 +84,47 @@ const DesktopPecas = () => {
   )
 }
 
+const MobilePecas = () => {
+  const componentes = [
+    {imagem: "/arduino.png", nome: "Arduino Uno R3", descricao: "Placa de Desenvolvimento", preco: "R$ 249,00"},
+    {imagem: "/clcarga.png", nome: "Célula de Carga", descricao: "Sensor de Peso", preco: "R$ 7,90"},
+    {imagem: "/modulo.png", nome: "Módulo HX711", descricao: "Módulo que amplifica sinal da célula de carga", preco: "R$ 5,90"},
+    {imagem: "protoboard.png", nome: "Protoboard", descricao: "Placa de ensaio.", preco: "R$ 7,50"}, 
+    {imagem: "/workplate.png", nome: "Workplate", descricao: "Base de Trabalho", preco: "R$14,90"},
+    {imagem: "/LCD.png", nome: "Display LCD", descricao: "Display que mostra o peso", preco: "R$ 23,90"},
+    {imagem: "/BluetoothHC05.png", nome: "Módulo Bluetooth HC-05", descricao: "Conecta o arduino e dispositivos bluetooth", preco: "R$ 31,25"}
+  ]
+
+  const [currentIndex, setCurrentIndex] = useState(0);
+
+  const nextSlide = () => setCurrentIndex((prevIndex) => (prevIndex + 1) % componentes.length);
+  const prevSlide = () => setCurrentIndex((prevIndex) => (prevIndex - 1 + componentes.length) % componentes.length);
+
+  return (
+    <div className='bg-fundoHeader lg:hidden p-4'>
+      <div className='relative flex flex-col items-center  rounded-lg shadow-lg overflow-hidden'>
+        <img src={componentes[currentIndex].imagem} alt={componentes[currentIndex].nome} className='w-full h-52 object-contain p-2 bg-gray-100'/>
+        <div className='p-4 w-full text-center text-white'>
+          <h2 className='text-xl font-bold mb-2'>{componentes[currentIndex].nome}</h2>
+          <p className='text-sm p-2'>{componentes[currentIndex].descricao}</p>
+        </div>
+        <div className='flex justify-between inset-x-0 mt-5 px-4 gap-2'>
+          <button onClick={prevSlide} className='p-2 bg-slate-200 shadow-lg rounded-full'>
+            <svg className='w-6 h-6' fill='none' stroke='currentColor' viewBox='0 0 24 24' xmlns='http://www.w3.org/2000/svg'>
+              <path strokeLinecap='round' strokeLinejoin='round' strokeWidth='2' d='M15 19l-7-7 7-7'></path>
+            </svg>
+          </button>
+          <button onClick={nextSlide} className='p-2 bg-slate-200 shadow-lg rounded-full'>
+            <svg className='w-6 h-6' fill='none' stroke='currentColor' viewBox='0 0 24 24' xmlns='http://www.w3.org/2000/svg'>
+              <path strokeLinecap='round' strokeLinejoin='round' strokeWidth='2' d='M9 5l7 7-7 7'></path>
+            </svg>
+          </button>
+        </div>
+      </div>
+    </div>
+  )
+}
+
 
 function Materiais() {
   return (
@@ -94,6 +135,7 @@ function Materiais() {
       <h1 className=' text-titulo font-bold text-center pt-[2rem] md:text-4xl text-3xl font-subtitulo'>Materiais</h1>
       
       <DesktopPecas />
+      <MobilePecas />
     </main>
     </div>
     
