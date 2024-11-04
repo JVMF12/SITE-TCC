@@ -17,7 +17,7 @@ export default function Referencias() {
               Importância do planejamento alimentar para o emagrecimento
             </h2>
             <button
-              onclick={() =>
+              onClick={() =>
                 window.open(
                   "https://sallet.com.br/a-importancia-do-planejamento-alimentar-para-o-emagrecimento/",
                   "_blank"
