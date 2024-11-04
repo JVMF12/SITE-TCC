@@ -213,17 +213,20 @@ const MobilePecas = () => {
 
   return (
     <div className="bg-fundoHeader lg:hidden  sm:max-w-[80%] border-2 rounded-xl ">
-      <div className=" flex flex-col items-center  rounded-lg shadow-lg  margin-2 md:items-center">
+      <div className=" flex flex-col items-center rounded-lg shadow-lg  margin-2 md:items-center">
         <img
           src={componentes[currentIndex].imagem}
           alt={componentes[currentIndex].nome}
-          className="rounded-t-lg md:w-full h-52 object-contain p-2 bg-gray-100"
+          className="rounded-t-lg md:w-fit min-w-full h-52 object-contain p-2 bg-gray-100"
         />
         <div className="p-4 md:w-full text-center text-white">
           <h2 className="text-xl font-bold mb-2">
             {componentes[currentIndex].nome}
           </h2>
           <p className="text-sm p-2">{componentes[currentIndex].descricao}</p>
+          <p className='text-sm text-titulo font-semibold'>
+            {componentes[currentIndex].preco}
+          </p>
         </div>
         <div className="flex justify-between inset-x-0 mt-5 px-4 gap-2 mb-4">
           <button
