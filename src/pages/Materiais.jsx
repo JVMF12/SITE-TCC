@@ -213,7 +213,7 @@ const MobilePecas = () => {
 
   return (
     <div className="bg-fundoHeader lg:hidden p-4 sm:max-w-[80%] sm:ml-20 ">
-      <div className="relative flex flex-col items-center  rounded-lg shadow-lg  margin-2 md:items-center">
+      <div className=" flex flex-col items-center  rounded-lg shadow-lg  margin-2 md:items-center">
         <img
           src={componentes[currentIndex].imagem}
           alt={componentes[currentIndex].nome}
