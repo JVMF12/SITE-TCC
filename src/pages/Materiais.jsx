@@ -212,12 +212,12 @@ const MobilePecas = () => {
     );
 
   return (
-    <div className="bg-fundoHeader lg:hidden p-4 sm:max-w-[80%] sm:ml-20 ">
+    <div className="bg-fundoHeader lg:hidden  sm:max-w-[80%] border-2 rounded-xl ">
       <div className=" flex flex-col items-center  rounded-lg shadow-lg  margin-2 md:items-center">
         <img
           src={componentes[currentIndex].imagem}
           alt={componentes[currentIndex].nome}
-          className="md:w-full h-52 object-contain p-2 bg-gray-100"
+          className="rounded-t-lg md:w-full h-52 object-contain p-2 bg-gray-100"
         />
         <div className="p-4 md:w-full text-center text-white">
           <h2 className="text-xl font-bold mb-2">
@@ -274,8 +274,8 @@ function Materiais() {
   return (
     <div>
       <HeaderMateriais />
-      <main className="bg-fundo bg-repeat bg-[length:100vh] font-openSans font-normal text-sm text-text md:flex md:flex-col md:items-center min-h-[100vh]">
-        <h1 className=" text-titulo font-bold text-center pt-[2rem] md:text-4xl text-3xl font-subtitulo">
+      <main className="bg-fundo bg-repeat bg-[length:100vh] font-openSans font-normal text-sm text-text flex flex-col items-center min-h-[100vh]">
+        <h1 className=" text-titulo font-bold text-center pt-[2rem] md:text-4xl text-3xl font-subtitulo mb-[8rem]">
           Materiais
         </h1>
 
