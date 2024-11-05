@@ -220,11 +220,11 @@ const MobilePecas = () => {
           alt={componentes[currentIndex].nome}
           className="rounded-t-lg md:w-fit min-w-full h-52 object-contain p-2 bg-gray-100"
         />
-        <div className="p-4 md:w-full text-center text-white">
+        <div className="p-4 md:w-full text-center text-white flex flex-col ">
           <h2 className="text-xl font-bold mb-2">
             {componentes[currentIndex].nome}
           </h2>
-          <p className="text-sm p-2">{componentes[currentIndex].descricao}</p>
+          <p className="text-sm p-2 h-[3rem] mb-2">{componentes[currentIndex].descricao}</p>
           <p className='text-sm text-titulo font-semibold'>
             {componentes[currentIndex].preco}
           </p>
