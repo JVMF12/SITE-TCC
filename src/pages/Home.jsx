@@ -107,21 +107,12 @@ export default function Home() {
                 </p>
               </div>
 
-              <div className="mt-10">
-                <h3 className="flex justify-center text-titulo font-semibold text-center text-2xl my-[1.5rem] font-subtitulo">
-                  Jogo
-                </h3>
-                <p className="md:max-w-[27.5rem]">
-                  Veja o jogo feito pela equipe NutriScale!
-                </p>
-              </div>
+              
             </div>
           </div>
         </section>
 
-        <div className="flex justify-center items-center bg-fundoSite">
-          <iframe width="320" height="180" src="https://www.youtube.com/embed/fvBycGBtMSY?si=QCMr7sIOEYoLMcoD" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen className="md:w-[560px] md:h-[315px] mb-4"></iframe>
-        </div>
+        
         
       </main>
     </div>

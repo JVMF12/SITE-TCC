@@ -29,7 +29,7 @@ export default function Sobre() {
               </p>
               <a
                 className="pt-6"
-                href="https://www.instagram.com/_phgomex?igsh=Z2puczV0bGFyamJu"
+                href="https://www.instagram.com/_ph.gomes/profilecard/?igsh=Z2puczV0bGFyamJu"
               >
                 <img src="/insta.svg" alt="Instagram" />
               </a>
@@ -82,6 +82,18 @@ export default function Sobre() {
             </div>
           </section>
         </div>
+
+        <div className="mt-10 md:flex md:flex-col md:items-center">
+                <h3 className="flex justify-center text-titulo font-semibold text-center text-2xl my-[1.5rem] font-subtitulo">
+                  Nosso jogo
+                </h3>
+                <p className="md:max-w-[27.5rem]  mt-5 mb-2 text-white">
+                  Veja o jogo feito pela equipe NutriScale!
+                </p>
+              </div>
+              <div className="flex justify-center items-center">
+              <iframe width="320" height="180" src="https://www.youtube.com/embed/fvBycGBtMSY?si=QCMr7sIOEYoLMcoD" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen className="md:w-[560px] md:h-[315px] mb-4"></iframe>
+            </div>
       </section>
     </div>
   );
