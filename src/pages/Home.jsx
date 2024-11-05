@@ -120,11 +120,7 @@ export default function Home() {
         </section>
 
         <div className="flex justify-center items-center bg-fundoSite sm:hidden">
-          <iframe width="560" height="315" src="https://www.youtube.com/embed/fvBycGBtMSY?si=QCMr7sIOEYoLMcoD" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-        </div>
-
-       <div className="flex justify-center items-center bg-fundoSite md:hidden">
-          <iframe width="320" height="160" src="https://www.youtube.com/embed/fvBycGBtMSY?si=QCMr7sIOEYoLMcoD" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+          <iframe width="320" height="160" src="https://www.youtube.com/embed/fvBycGBtMSY?si=QCMr7sIOEYoLMcoD" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen className= "md:w-[560px] md:h-[315px]"></iframe>
         </div>
         
       </main>
