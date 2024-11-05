@@ -6,6 +6,7 @@ import modulo from "/modulo.png";
 import protoboard from "/protoboard.png";
 import workplate from "/workplate.png";
 import fundo from "/fundo.svg";
+import arduinouno from "/arduinouno.png"
 import HeaderMateriais from "../components/HeaderMateriais";
 
 const Material = ({ imagem, nome, descricao, preco }) => (
@@ -28,10 +29,10 @@ const Material = ({ imagem, nome, descricao, preco }) => (
 const DesktopPecas = () => {
   const produtos = [
     {
-      imagem: "/arduino.png",
+      imagem: "/arduinouno.png",
       nome: "Arduino Uno R3",
       descricao: "Placa de Desenvolvimento",
-      preco: "R$ 249,00",
+      preco: "R$ 94,90",
     },
     {
       imagem: "/clcarga.png",
@@ -159,10 +160,10 @@ const DesktopPecas = () => {
 const MobilePecas = () => {
   const componentes = [
     {
-      imagem: "/arduino.png",
+      imagem: "/arduinouno.png",
       nome: "Arduino Uno R3",
       descricao: "Placa de Desenvolvimento",
-      preco: "R$ 249,00",
+      preco: "R$ 94,90",
     },
     {
       imagem: "/clcarga.png",
