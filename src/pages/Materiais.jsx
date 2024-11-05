@@ -30,12 +30,12 @@ const DesktopPecas = () => {
   const produtos = [
     {
       imagem: "/arduinouno.png",
-      nome: "Arduino Uno R3",
+      nome: "Arduino Uno R3 BlackBoard",
       descricao: "Placa de Desenvolvimento",
       preco: "R$ 94,90",
     },
     {
-      imagem: "/clcarga.png",
+      imagem: "/clcarga.jpeg",
       nome: "Célula de Carga",
       descricao: "Sensor de Peso",
       preco: "R$ 7,90",
@@ -161,12 +161,12 @@ const MobilePecas = () => {
   const componentes = [
     {
       imagem: "/arduinouno.png",
-      nome: "Arduino Uno R3",
+      nome: "Arduino Uno R3 BlackBoard",
       descricao: "Placa de Desenvolvimento",
       preco: "R$ 94,90",
     },
     {
-      imagem: "/clcarga.png",
+      imagem: "/clcarga.jpeg",
       nome: "Célula de Carga",
       descricao: "Sensor de Peso",
       preco: "R$ 7,90",
@@ -214,7 +214,7 @@ const MobilePecas = () => {
 
   return (
     <div className="bg-fundoHeader lg:hidden  sm:max-w-[80%] border-2 rounded-xl ">
-      <div className=" flex flex-col items-center rounded-lg shadow-lg  margin-2 md:items-center">
+      <div className=" flex flex-col items-center rounded-lg shadow-lg  margin-2 md:items-center  w-[20rem]">
         <img
           src={componentes[currentIndex].imagem}
           alt={componentes[currentIndex].nome}
@@ -279,7 +279,7 @@ function Materiais() {
     <div>
       <HeaderMateriais />
       <main className="bg-fundo bg-repeat bg-[length:100vh] font-openSans font-normal text-sm text-text flex flex-col items-center min-h-[100vh]">
-        <h1 className=" text-titulo font-bold text-center pt-[2rem] md:text-4xl text-3xl font-subtitulo mb-[8rem]">
+        <h1 className=" text-titulo font-bold text-center pt-[2rem] md:text-4xl text-3xl font-subtitulo mb-[8rem] md:mb-10">
           Materiais
         </h1>
 

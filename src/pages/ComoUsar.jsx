@@ -25,7 +25,7 @@ function Comousar() {
       <section className="md:flex md:flex-col md:items-center">
         <div className="md:flex md:justify-center border-solid border-botaoSelecionado border-[0.18rem] mt-[1.5rem] mx-[1rem] rounded-[.5rem]  md:max-w-[41.5rem]">
           <h2 className="font-semibold text-sm text-center justify-center py-[.5rem]  px-[.5rem] md:text-lg">
-            Após seguir os passsos anteriores, basta criar uma conta no
+            Após seguir os passsos anteriores, basta conectar a balança no
             aplicativo e começar sua jornada na vida saúdavel, com o auxílio de
             uma excelente ferramenta
           </h2>
