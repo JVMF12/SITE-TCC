@@ -34,11 +34,11 @@ function Comousar() {
           <h1 className="text-titulo font-bold text-center text-2xl my-[1.5rem] font-subtitulo">
             Tutorial
           </h1>
-          <iframe className="pb-[3rem] w-[20rem] h-[15rem] md:w-[35rem] md:h-[25rem]" width="560" height="315" src="https://www.youtube.com/embed/-qLfybfvsHw?si=Z-FBbFKiYN43jnyU" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-        </div>
+          <iframe className=' pb-[3rem] w-[20rem] h-[15rem] md:w-[35rem] md:h-[25rem]' width="560" height="315" src="https://www.youtube.com/embed/vJZYwSgaCeA?si=GUNUrDuVcA3dMSUD" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+        </div>       
       </section>
     </main>
   );
 }
-
 export default Comousar;
+

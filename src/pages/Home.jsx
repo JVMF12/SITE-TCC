@@ -72,7 +72,7 @@ export default function Home() {
                     Alimentação saudável
                   </h3>
                   <p className="md:max-w-[27.5rem]">
-                   '' Auxiliar todas as pessoas na sua jornada rumo à alimentação
+                    Auxiliar todas as pessoas na sua jornada rumo à alimentação
                     saudável e balanceada, pois uma boa dieta é a chave para uma
                     qualidade de vida melhor.
                   </p>
