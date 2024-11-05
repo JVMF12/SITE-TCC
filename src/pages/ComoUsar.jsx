@@ -42,7 +42,7 @@ function Comousar() {
                 <h3 className="flex justify-center text-titulo font-semibold text-center text-2xl my-[1.5rem] font-subtitulo">
                   Nosso jogo
                 </h3>
-                <p className="md:max-w-[27.5rem]  mt-5 mb-2 text-white">
+                <p className="md:max-w-[27.5rem]  mt-5 mb-2 text-white flex justify-center items-center">
                   Veja o jogo feito pela equipe NutriScale!
                 </p>
               </div>
